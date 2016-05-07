@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Mother's Day!</title>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Happy Mother's Day Mom!</h1>
+    <p>I built you a new website that you can use to start learning how to program.</p>
+    <a target="_blank" type="button" class="btn btn-lg btn-default" href="https://dashboard.heroku.com/apps/joni-space/activity"><span class="glyphicon glyphicon-flash"></span> Server on Heroku</a>
+    <a target="_blank" type="button" class="btn btn-lg btn-primary" href="https://github.com/jmstarry/joni-space"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-info-sign"></span> How this web app works</h3>
+      <ul>
+        <li>The code is all on GitHub. It works kind of like Dropbox because it keeps your code up to date. The difference is that you have to manually sync which code you want to save.</li>
+        <li>When you save your code to GitHub, it will automatically update your website for you. This is done by using Heroku which is a service that helps you build your own website.</li>
+        <li>The code that you will be changing will be HTML, CSS, and JavaScript. Every website is built with these three types of code.</li>
+      </ul>
+      <h3><span class="glyphicon glyphicon-flash"></span> Setup Instructions</h3>
+
+      <ol>
+        <li>Download Programs: <a target="_blank" href="https://www.dropbox.com/s/dku9rs17hflwcdu/Archive.zip?dl=0">Dropbox Link</a> (Click the "..." button and then "Download")
+          <h5>Included:</h5>
+          <ul>
+            <li><b>GitHub Desktop:</b> This application will help you save your code.</li>
+            <li><b>Atom:</b> This application will be the editor that you use to write your code.</li>
+            <li><b>Heroku:</b> This is the program that enables you to run your website locally on your laptop (much faster).</li>
+            <li><b>Node:</b> This is the server program that powers your website.</li>
+          </ul>
+        </li>
+        <li>Install Heroku
+          <ul>
+            <li>Once it's installed, open the Terminal.app</li>
+            <li>Run "heroku login", I will send you your username and password</li>
+            <li>Run "cd ~/Desktop"</li>
+            <li>Run "heroku git:clone -a joni-space", that will download all the code into a Desktop folder called joni-space!</li>
+          </ul>
+        </li>
+        <li>Install GitHub
+          <ul>
+            <li>It will ask you to sign in, your username is "jmstarry" and I will send you your password</li>
+            <li>Be sure to follow the instructions closely and when it asks to add projects, you should see "joni-space", make sure to add it</li>
+          </ul>
+        </li>
+        <li>Install Node</li>
+        <li>Install Atom</li>
+      </ol>
+    </div>
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-tasks"></span> Run your website on your computer</h3>
+      <ul>
+        <li>Open Terminal.app</li>
+        <li>Run "cd ~/Desktop/joni-space"</li>
+        <li>Run "npm install"</li>
+        <li>Run "npm start"</li>
+        <li>Run "heroku local"</li>
+        <li>Open a browser and type in "localhost://5000"</li>
+        <li>Open Atom and open your "joni-space" folder</li>
+        <li>Click the public/stylesheets/main.css and find where it says "#532F8C", change this to "pink"</li>
+        <li>Reload your browser! You just wrote CSS :)</li>
+      </ul>
+      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
+      <ul>
+        <li><a href="https://guides.github.com/activities/hello-world/">Intro to GitHub</a></li>
+        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Heroku Node Server Guide</a></li>
+      </ul>
+    </div>
+  </div> <!-- row -->
+</div>
+
+
+</body>
+</html>
