@@ -21,6 +21,10 @@ app.get('/tasks', function(request, response) {
   response.render('pages/tasks');
 });
 
+app.get('/sudoku', function(request, response) {
+  response.render('pages/sudoku');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
